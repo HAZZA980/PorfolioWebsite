@@ -32,7 +32,10 @@ The "Projects" section (coming soon) will feature my software development projec
 
 Contact
 In the "Contact" section, you can find the best ways to contact me.
+
     LinkedIn: Harry Pape on LinkedIn
+
     GitHub: Harry Pape on GitHub
+    
     Email: harry.pape17@gmail.com
 
