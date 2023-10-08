@@ -14,6 +14,7 @@ I will be returning to De Montfort University in October 2024 to complete my fin
 The Portfolio website is designed to provide information about me and showcases my skills as a software developer. 
 
 Technologies Used
+
 The website is built using the following technologies:
     HTML
     CSS
@@ -22,15 +23,19 @@ The website is built using the following technologies:
 Here's a brief overview of the website sections:
 
 About Me
+
 In the "About Me" section, you can learn about my background and skills. I am a versatile software developer with experience in various programming languages, including Java, Python, and PHP. I'm passionate about crafting innovative software solutions and staying up-to-date with emerging technologies.
 
 What I Do
+
 The "What I Do" section highlights my expertise in different areas, including development, design, open-source contributions, and my journey as a remote developer living in various cities.
 
 Projects
+
 The "Projects" section (coming soon) will feature my software development projects, showcasing practical skills and creativity. Please Note: I am only add projects which are live webpages. All back-end projects will be readily available on github.
 
 Contact
+
 In the "Contact" section, you can find the best ways to contact me.
 
     LinkedIn: Harry Pape on LinkedIn
