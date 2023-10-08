@@ -1,0 +1,436 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 100%;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-300%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        /* Fade in to full opacity */
+    }
+}
+
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 130vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 15;
+
+}
+
+.image-container {
+    height: 100%;
+    width: 100%;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 120vh, 0% 100vh);
+}
+
+.cover {
+    background-color: black;
+    opacity: 60%;
+    height: 130vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 120vh, 0% 100vh);
+    opacity: 70%;
+}
+
+/* title box */
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    position: absolute;
+    top: 39%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 60rem;
+    background-color: black;
+    opacity: 30%;
+
+}
+
+.title {
+    position: absolute;
+    top: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    font-size: 40px;
+    color: white;
+    z-index: 999;
+    opacity: 0;
+    animation: fadeIn 1s 1s forwards;
+}
+
+.desc {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 2s 2s forwards;
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    position: absolute;
+    top: 0rem;
+
+    z-index: 1000;
+    width: 40%;
+    height: 2rem;
+    color: black;
+}
+
+.menu-item {
+    color: #f3f3f3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    color: lightgray;
+}
+
+.about-me {
+    animation: slideIn 1s ease;
+}
+
+.what-I-do {
+    animation: slideIn 1.5s ease;
+}
+
+.projects {
+    animation: slideIn 2s ease;
+}
+
+.contact {
+    animation: slideIn 2.5s ease;
+}
+
+
+/* Add this media query for screens with a maximum width of 768px */
+@media (max-width: 1080px) {
+
+    /* Adjust the header container height for smaller screens */
+    .header-container {
+        height: 100vh;
+    }
+
+    /* Modify the title container for better alignment on smaller screens */
+    .title-container {
+        top: 25%;
+        left: 10%;
+        width: 80%;
+        height: auto;
+        opacity: 50%;
+    }
+
+    .title {
+        top: 20%;
+        font-size: 30px;
+    }
+
+    .desc {
+        top: 35%;
+        font-size: 16px;
+    }
+
+    /* Adjust the menu bar for better spacing on smaller screens */
+    .menubar {
+        width: 60%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+
+    /* Adjust the biography section for better readability on smaller screens */
+    .biography {
+        font-size: 14px;
+    }
+
+    /* Modify the grid layout in the "What I Do" section for better stacking on smaller screens */
+    .quarter {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Add padding and font size adjustments for the "Projects Coming Soon" section */
+    .projects-container h3 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    /* Adjust the contact links for better spacing on smaller screens */
+    .links {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the footer text size for better readability on smaller screens */
+    .contact-container p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+
+    /* Adjust the header container height for smaller screens */
+    .header-container {
+        height: 90vh;
+    }
+
+    /* Modify the title container for better alignment on smaller screens */
+    .title-container {
+        top: 25%;
+        left: 10%;
+        width: 80%;
+        height: auto;
+        opacity: 50%;
+    }
+
+    .title {
+        top: 40%;
+        font-size: 30px;
+    }
+
+    .desc {
+        top: 55%;
+        font-size: 16px;
+    }
+
+    /* Adjust the menu bar for better spacing on smaller screens */
+    .menubar {
+        width: 60%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+
+    /* Adjust the biography section for better readability on smaller screens */
+    .biography {
+        font-size: 14px;
+    }
+
+    /* Modify the grid layout in the "What I Do" section for better stacking on smaller screens */
+    .quarter {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Add padding and font size adjustments for the "Projects Coming Soon" section */
+    .projects-container h3 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    /* Adjust the contact links for better spacing on smaller screens */
+    .links {
+        flex-direction: column;
+    }
+
+    .link {
+        margin-bottom: 20px;
+    }
+
+    /* Adjust the footer text size for better readability on smaller screens */
+    .contact-container p {
+        font-size: 12px;
+    }
+}
+
+/* Media query for screens smaller than 768px (typical mobile screens) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        /* Reduce font size for smaller screens */
+    }
+
+    .header-container {
+        height: auto;
+        /* Allow the header to adjust its height based on content */
+        padding: 20px 0;
+        /* Add padding to the header for better spacing on mobile */
+    }
+
+    .image-container img {
+        clip-path: none;
+        /* Remove clip-path on mobile */
+    }
+
+    .cover {
+        height: auto;
+        /* Allow the cover to adjust its height based on content */
+    }
+
+    .parent-container {
+        top: 20%;
+        /* Adjust the vertical position for mobile */
+    }
+
+    .title-container {
+        top: 0;
+        /* Keep the title container at the top on mobile */
+        width: 100%;
+        /* Use full width on mobile */
+    }
+
+    .title {
+        top: 5%;
+        /* Adjust the vertical position for mobile */
+        font-size: 24px;
+        /* Reduce font size for mobile */
+    }
+
+    .desc {
+        top: 25%;
+        /* Adjust the vertical position for mobile */
+        font-size: 14px;
+        /* Reduce font size for mobile */
+    }
+
+    .menubar {
+        flex-direction: column;
+        /* Stack menu items vertically on mobile */
+        text-align: center;
+        /* Center-align menu items on mobile */
+    }
+
+    .menu-item {
+        font-size: 16px;
+        /* Reduce font size for mobile */
+        margin: 10px 0;
+        /* Add margin between menu items on mobile */
+    }
+}
+
+
+
+/* Media query for screens with a maximum width of 375px (typical mobile screens) */
+@media (max-width: 1071px) {
+    .header-container {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow: hidden;
+        /* Allow the header to adjust its height based on content */
+    }
+
+    .image-container img {
+        clip-path: none;
+        /* Remove clip-path on mobile */
+    }
+
+    .parent-container {
+        top: 20%;
+        /* Adjust the vertical position for mobile */
+    }
+
+    .title-container {
+        top: 0;
+        /* Keep the title container at the top on mobile */
+        width: 100%;
+        /* Use full width on mobile */
+    }
+
+    .cover {
+        background-color: black;
+        opacity: 60%;
+        height: 110vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        z-index: 20;
+        opacity: 70%;
+    }
+
+    .title {
+        top: 30%;
+        /* Adjust the vertical position for mobile */
+        font-size: 24px;
+        /* Reduce font size for mobile */
+        text-align: center;
+    }
+
+    .desc {
+        top: 65%;
+        /* Adjust the vertical position for mobile */
+        font-size: 16px;
+        text-align: center;
+        /* Reduce font size for mobile */
+    }
+
+    .menubar {
+        flex-direction: column;
+        /* Stack menu items vertically on mobile */
+        text-align: center;
+        /* Center-align menu items on mobile */
+        width: 100%;
+        /* Use full width on mobile */
+    }
+
+    .menu-item {
+        font-size: 16px;
+        /* Reduce font size for mobile */
+        margin: 10px 0;
+        /* Add margin between menu items on mobile */
+    }
+}

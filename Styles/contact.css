@@ -1,0 +1,101 @@
+.contact-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: #f8f8f8;
+    height: 40vh;
+    width: 100%;
+    margin-bottom: 0;
+/*    color: #0074e4; blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.links .link img {
+    width: 50px;
+    height: 50px;
+}
+
+.links .link {
+    margin: 3em;
+    text-align: center;
+    font-size: 15px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+
+.link a:hover {
+    color: #0074e4;
+}
+
+@media screen and (max-width: 1080px) {
+    .contact-container {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.856);
+        color: #f8f8f8;
+        height: 4%;
+        width: 100%;
+        margin-bottom: 0;
+    /*    color: #0074e4; blue */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .links {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .links .link img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .links .link {
+        margin: 3em;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .link a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .link a:hover {
+        color: #0074e4;
+    }
+}
+
+/* Styles for screens with a maximum width of 375px (mobile) */
+@media (max-width: 1071px) {
+    .contact-container {
+        height: auto; /* Adjust the height as needed for mobile layout */
+        width: 100%;
+    }
+
+    .links {
+        flex-direction: column; /* Stack links vertically for better mobile layout */
+    }
+
+    .links .link {
+        margin: 1em 0; /* Reduce the margin for better spacing on mobile */
+    }
+}
